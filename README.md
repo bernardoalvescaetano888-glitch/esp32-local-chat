@@ -52,3 +52,28 @@ No arquivo `chat.ino`, você pode alterar o nome da rede Wi-Fi (SSID) e a senha 
 ```cpp
 const char* ssid = "ESP32-Chat-Local";
 const char* password = ""; // Deixe vazio para rede aberta ou adicione senha (mínimo 8 caracteres)
+5. Upload
+Conecte o ESP32 ao computador via USB.
+
+Selecione a placa correta em Ferramentas > Placa (ex: ESP32 Dev Module).
+
+Selecione a porta COM correspondente e clique no botão Carregar (Upload).
+
+📱 Como Usar
+Ligue o ESP32.
+
+No seu celular ou computador, procure pelas redes Wi-Fi disponíveis e conecte-se na rede: ESP32-Chat-Local.
+
+Abra o navegador de sua preferência e acesse:
+
+IP Direto: http://192.168.4.1
+
+Ou via mDNS: http://chat.local
+
+Digite seu nome e comece a conversar! O primeiro a entrar será o administrador.
+
+🔮 Próximos Passos (Evolução para App)
+Este projeto local serve como base para entendermos a arquitetura de WebSockets. Futuramente, a lógica poderá ser migrada para a nuvem (utilizando Node.js/Firebase) combinada com um aplicativo mobile desenvolvido em Flutter ou React Native, permitindo conversas via internet de qualquer lugar.
+
+📄 Licença
+Este projeto está sob a licença MIT. Sinta-se à vontade para modificar e melhorar!
